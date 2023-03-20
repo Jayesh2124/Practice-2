@@ -1,0 +1,372 @@
+#signUp {
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 180%;
+}
+
+@media (min-width: 768px) {
+    #signUp {
+        transform: translateY(40%);
+        width: 80%;
+    }
+}
+
+@media (min-width: 1280px) {
+    #signUp {
+        width: 60%;
+    }
+}
+
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://uploads-ssl.webflow.com/5a9ee6416e90d20001b20038/6289f32c1971ae8118019a70_blue-gradient.png");
+    border-radius: 10px;
+}
+
+@media (min-width: 1024px) {
+    .main-wrapper {
+        max-width: 1000px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-wrapper {
+        border-radius: 30px;
+    }
+    .left-side-wrapper {
+        background-image: url(http://borrowingsanalytics.azurewebsites.net/Loginimages/graphic1.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+
+*{
+	
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+.wave{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: -1;
+    width: 100%;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap :7rem;
+    padding: 0 2rem;
+}
+.img{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+    margin-left: 250px;
+	margin-top: 20px;
+}
+
+#login-content{
+	display: flex;
+	/* justify-content: flex-start; */
+	justify-content: flex-end !important;
+    align-items: baseline;
+	flex-direction: column-reverse;
+	flex-wrap: nowrap;
+	align-content: normal;
+	justify-content: flex-end !important;
+	align-items: center;
+	text-align: center;
+     /* margin-left: 80px; 
+	 margin-right: 80px; */
+     margin-bottom: 100px;
+      border-style: solid; 
+     margin-top: 90px;
+     border-radius: 10px;
+     height: 550px;
+	 align-items: center;
+     width: 75%;
+     /* height: 95%; */
+}
+.img img{
+	width: 450px;
+    margin-bottom: 205px;
+}
+/* form{
+	width: 360px;
+	margin-left: 200px !important;
+} */
+#login-content img{
+    height: 100px;
+	max-width: inherit;
+}
+#login-content h2{
+	margin: 15px 0;
+	color: #333;
+	text-transform: uppercase;
+	/* font-size: 2.9rem; */
+}
+#login-content .input-div{
+	position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+#login-content .input-div.one{
+	margin-top: 0;
+}
+#i{
+	color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+   
+}
+#i i{
+	transition: .3s;
+}
+.input-div > div{
+    position: relative;
+	height: 45px;
+}
+.input-div > div > h5{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #999;
+	font-size: 18px;
+	transition: .3s;
+}
+.input-div:before, .input-div:after{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: #625bff;
+	transition: .4s;
+}
+.input-div:before{
+	right: 50%;
+}
+.input-div:after{
+	left: 50%;
+}
+.input-div.focus:before, .input-div.focus:after{
+	width: 50%;
+}
+.input-div.focus > div > h5{
+	top: -5px;
+	font-size: 15px;
+}
+.input-div.focus > .i > i{
+	color: #625bff;
+}
+.input-div > div > input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: #555;
+	font-family: 'poppins', sans-serif;
+}
+.input-div.pass{
+	margin-bottom: 4px;
+}
+a{
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: #999;
+	font-size: 0.9rem;
+	transition: .3s;
+}
+a:hover{
+	color: #625bff;
+}
+.btn{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #625bff, #625bff, #625bff);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+.btn:hover{
+	background-position: right;
+}
+
+
+@media screen and (max-width: 1050px){
+	.container{
+		grid-gap: 5rem;
+	}
+    .login-content h2{
+     
+        border-style: solid;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	form{
+		width: 290px;
+	}
+
+	.login-content h2{
+        font-size: 2.4rem;
+        margin: 8px 0;
+        border-style: solid;
+	}
+
+	.img img{
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.container{
+		grid-template-columns: 1fr;
+	}
+
+	.img{
+		display: none;
+	}
+
+	.wave{
+		display: none;
+	}
+
+	.login-content{
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.container{
+		grid-template-columns: 1fr;
+        border-style: none;
+	}
+
+	#leftPanel{
+		display: none;
+	}
+
+	#centerPanel{
+		display: none;
+	}
+
+	#rightPanel{
+		justify-content: center;
+        width: 400px;
+        border-style: none;
+	}
+    .row{
+        width: 400px;
+        border-style: none;
+    }
+    #login-content{
+		justify-content: center;
+        border-style: none;
+	}
+
+    
+
+}
+
+
+@media screen and (max-width: 667px){
+	.container{
+		grid-template-columns: 1fr;
+        border-style: none;
+	}
+
+	#leftPanel{
+		display: none;
+	}
+
+	#centerPanel{
+		display: none;
+	}
+
+	#rightPanel{
+		justify-content: center;
+        width: 350px;
+        border-style: none;
+	}
+    .row{
+        width: 435px;
+        border-style: none;
+    }
+    #login-content{
+		justify-content: center;
+        border-style: none;
+	}
+}
+
+.ForgotPassword{
+	float:left;
+     margin-right: 5px;
+}
+.title{
+	font-size: xx-large;
+}
+#userEmail, #userPassword{
+	font-size: small;
+	color: rgb(19, 17, 17);
+}
+.AcoountNotAvailable, .ForgotPassword{
+	color: rgb(19, 17, 17);
+}
+

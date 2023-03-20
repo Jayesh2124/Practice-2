@@ -7,12 +7,15 @@
     <div class="side-menu">
        
             <h2 style="color: white;">Jayesh Sutar</h2>
-        <br> <a href="#"><i class="fa fa-user"></i><span>Customers</span></a>
+        <br>
+         <a  routerLink="/Customer" ><i class="fa fa-user"></i><span>Customers</span></a>
          <a href="#"><i class="fa fa-envelope"></i><span>Message</span></a> 
-         <a href="#"><i class="fa fa-shopping-basket"></i><span>Products</span></a> 
+         <a routerLink="/Products" ><i class="fa fa-shopping-basket"></i><span>Products</span></a> 
          <a routerLink="/Analyst" ><i class="fa fa-sellsy"></i><span>Statistices</span></a> 
          <a href="#"><i class="fa fa-ban"></i><span>Ban Customers</span></a> 
          <a href="#"><i class="fa fa-cog"></i><span>Setting</span></a>
           <a href="#" class="Logout"><span>Logout</span></a>
     </div>
+
+    <!-- here we display the data of other components in the class data and router-outlet tag -->
     <div class="data"> <router-outlet></router-outlet> </div>
