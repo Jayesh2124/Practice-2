@@ -9,11 +9,8 @@ import { Router } from '@angular/router';
 export class LoginComponent {
 
   constructor( private route:Router ) {}
-  isLoggedIN:boolean = true;
+  isLoggedIN:boolean = false;
   loginClicked(){
     this.isLoggedIN = false;
-   
-
   }
-
 }

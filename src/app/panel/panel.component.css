@@ -13,17 +13,16 @@ body {
 }
 
 .data {
-    position: absolute;
-    top: 85px;
-   
-    left: 260px;
+    position: relative;   
+    top: 90px;
+    margin-left: 275px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 nav {
     background: #1D2951;
-    line-height: 80px;
+    line-height: 50px;
     position: fixed;
     width: 100%;
 }
@@ -68,6 +67,7 @@ nav ul li a:hover {
     width: 250px;
     height: 100%;
     margin-top: 80px;
+    z-index: 1;
 }
 
 .side-menu center img {
@@ -148,7 +148,7 @@ nav .menu-bar {
 
 @media (max-width:650px) {
     .data {
-        display: none;
+        display: verticle;
     }
 
     nav ul {
