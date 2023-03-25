@@ -10,7 +10,9 @@ import { CustomersComponent } from './customers/customers.component';
 import { ProductsComponent } from './products/products.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { LoginComponent } from './login/login.component';
-
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthInterceptInterceptor } from './auth-intercept.interceptor';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -21,6 +23,7 @@ import { LoginComponent } from './login/login.component';
     CustomersComponent,
     ProductsComponent,
     LoginComponent,
+   
 
   ],
   imports: [
@@ -29,10 +32,15 @@ import { LoginComponent } from './login/login.component';
     NgbModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-
-    
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+   {
+    provide : HTTP_INTERCEPTORS,
+    useClass : AuthInterceptInterceptor,
+    multi : true
+   }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -13,11 +13,11 @@ body {
 }
 
 .data {
-    position: relative;   
+    position: absolute;   
     top: 90px;
-    margin-left: 275px;
+    left: 275px;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;  
 }
 
 nav {
@@ -130,7 +130,7 @@ nav .menu-bar {
     }
 
     .side-menu {
-        width: 100px;
+        width: 10px;
     }
 
     .side-menu a i {
@@ -156,9 +156,9 @@ nav .menu-bar {
     }
 
     .side-menu {
-        width: 100%;
+      
         text-align: center;
-        left: 100%;
+   
         background-color: #4c516d;
         transition: all 0.5s;
     }
